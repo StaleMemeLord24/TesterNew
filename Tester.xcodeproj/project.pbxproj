@@ -19,6 +19,9 @@
 		46BC21D02932D2B300795335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BC21A52932D2B300795335 /* Assets.xcassets */; };
 		46BC21E02932D61A00795335 /* SpeechRecognizor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */; };
 		46BC21E12932D61A00795335 /* SpeechRecognizor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */; };
+		46F3DFAA2989E4F8007380CD /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 46F3DFA92989E4F8007380CD /* StreamChatUI */; };
+		46F3DFAC298A9BF1007380CD /* ActualInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3DFAB298A9BF1007380CD /* ActualInterface.swift */; };
+		46F3DFAD298A9BF1007380CD /* ActualInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3DFAB298A9BF1007380CD /* ActualInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		46BC21C72932D2B300795335 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		46BC21C92932D2B300795335 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizor.swift; sourceTree = "<group>"; };
+		46F3DFAB298A9BF1007380CD /* ActualInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F3DFAA2989E4F8007380CD /* StreamChatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 			children = (
 				46BC21A32932D2B200795335 /* TesterApp.swift */,
 				46BC21A42932D2B200795335 /* ContentView.swift */,
+				46F3DFAB298A9BF1007380CD /* ActualInterface.swift */,
 				46BC21A52932D2B300795335 /* Assets.xcassets */,
 				46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */,
 			);
@@ -161,6 +167,9 @@
 			dependencies = (
 			);
 			name = "Tester (iOS)";
+			packageProductDependencies = (
+				46F3DFA92989E4F8007380CD /* StreamChatUI */,
+			);
 			productName = "Tester (iOS)";
 			productReference = 46BC21AA2932D2B300795335 /* Tester.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 46BC219D2932D2B200795335;
+			packageReferences = (
+				46F3DFA82989E4F8007380CD /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+			);
 			productRefGroup = 46BC21AB2932D2B300795335 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -306,6 +318,7 @@
 				46BC21E02932D61A00795335 /* SpeechRecognizor.swift in Sources */,
 				46BC21CD2932D2B300795335 /* ContentView.swift in Sources */,
 				46BC21CB2932D2B300795335 /* TesterApp.swift in Sources */,
+				46F3DFAC298A9BF1007380CD /* ActualInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +329,7 @@
 				46BC21E12932D61A00795335 /* SpeechRecognizor.swift in Sources */,
 				46BC21CE2932D2B300795335 /* ContentView.swift in Sources */,
 				46BC21CC2932D2B300795335 /* TesterApp.swift in Sources */,
+				46F3DFAD298A9BF1007380CD /* ActualInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +721,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46F3DFA82989E4F8007380CD /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46F3DFA92989E4F8007380CD /* StreamChatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46F3DFA82989E4F8007380CD /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46BC219E2932D2B200795335 /* Project object */;
 }
