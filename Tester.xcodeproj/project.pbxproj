@@ -17,6 +17,8 @@
 		46BC21CE2932D2B300795335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC21A42932D2B200795335 /* ContentView.swift */; };
 		46BC21CF2932D2B300795335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BC21A52932D2B300795335 /* Assets.xcassets */; };
 		46BC21D02932D2B300795335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BC21A52932D2B300795335 /* Assets.xcassets */; };
+		46BC21E02932D61A00795335 /* SpeechRecognizor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */; };
+		46BC21E12932D61A00795335 /* SpeechRecognizor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		46BC21C32932D2B300795335 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BC21C72932D2B300795335 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		46BC21C92932D2B300795335 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 				46BC21A32932D2B200795335 /* TesterApp.swift */,
 				46BC21A42932D2B200795335 /* ContentView.swift */,
 				46BC21A52932D2B300795335 /* Assets.xcassets */,
+				46BC21DF2932D61A00795335 /* SpeechRecognizor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -299,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BC21E02932D61A00795335 /* SpeechRecognizor.swift in Sources */,
 				46BC21CD2932D2B300795335 /* ContentView.swift in Sources */,
 				46BC21CB2932D2B300795335 /* TesterApp.swift in Sources */,
 			);
@@ -308,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BC21E12932D61A00795335 /* SpeechRecognizor.swift in Sources */,
 				46BC21CE2932D2B300795335 /* ContentView.swift in Sources */,
 				46BC21CC2932D2B300795335 /* TesterApp.swift in Sources */,
 			);
